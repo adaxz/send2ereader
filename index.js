@@ -12,7 +12,7 @@ const { extname, basename, dirname } = require('path')
 const FileType = require('file-type')
 const ToPinyin = require("chinese-to-pinyin");
 
-const port = 3001
+const port = process.env.PORT || 3000;
 const expireDelay = 30  // 30 seconds
 const maxExpireDuration = 1 * 60 * 60  // 1 hour
 const maxFileSize = 1024 * 1024 * 800  // 800 MB
